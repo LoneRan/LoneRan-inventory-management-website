@@ -1,0 +1,22 @@
+{% extends "homepage/templates/base.html" %}
+{% load static %}
+{% block metadescription %}
+	Home Page
+{% endblock %}
+{% block title %}
+	Home Page
+{% endblock %}
+{% block content %}
+	<div>
+			<div class="mx-auto">
+				<br>
+				<h1 class="my_title text-center">Choose what you want</h1>
+				<br>
+                <a href="/buy/" class="btn btn-secondary">Inventory Management</a>
+                <a href="{% url 'home' %}" class="btn btn-secondary">Food Freshness</a>
+                <a href="/donation" class="btn btn-secondary">Donation</a>
+			</div>
+			</div>
+	</div>
+	<br>
+{% endblock %}
