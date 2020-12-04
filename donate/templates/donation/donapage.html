@@ -1,0 +1,49 @@
+{% extends "donate.html" %}
+{% load static %}
+{% block metadescription %}
+	Home Page
+{% endblock %}
+{% block title %}
+	Home Page
+{% endblock %}
+{% block content %}
+	<div>
+			<div class="mx-auto">
+				<br>
+				<div class="container">
+					<p>
+					<div class ="row">
+					<h1 class="jumbotron-heading">Thanks for your donation!</h1>
+					{%if excel%}
+						<a class="btn btn-primary"href="{% url 'donate:sendNoti' %}">Send Notifications to All</a>
+					{%endif%}
+					</div>
+					</p>
+					<p>
+						{%if not excel%}
+							<a href="donation/" class="btn btn-primary">Check Stock</a>
+						{%endif%}
+					</p>
+
+					{%if excel%}
+						<div class="row justify-content-center">
+							<div class="col-auto">
+								<div class="table table-dark">
+
+									{% autoescape off %}
+										{{ excel }}
+									{% endautoescape %} 
+								</div>
+							</div>
+						</div>
+					{%endif%}
+		
+				</div>
+				
+
+				
+			</div>
+			</div>
+	</div>
+	<br>
+{% endblock %}

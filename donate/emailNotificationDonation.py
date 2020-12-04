@@ -72,38 +72,38 @@ messageDonation = messages['message_template']
 messageDonation.dtype
 
 
-
-#creating an SMTP secure instance that encapsulates an SMTP connection
-connection = smtplib.SMTP_SSL(host='smtp.gmail.com', port=465)
-
-
-# create and send a simple text message through email
+def sendEmail():
+    #creating an SMTP secure instance that encapsulates an SMTP connection
+    connection = smtplib.SMTP_SSL(host='smtp.gmail.com', port=465)
 
 
-
-# Create the container email message.
-msg = EmailMessage()
+    # create and send a simple text message through email
 
 
-msg['Subject'] = 'Donation of excess food'
-#The email address of sender
-msg['From'] = sender_email
-#Send email address of reciever
 
-#maybe use a for loop here to send emails to several receivers
-msg['To'] = receiver_email[2]
-print(msg['To'])
-msg.set_content(messageDonation[0])
+    # Create the container email message.
+    msg = EmailMessage()
 
 
-with open(leftOverFile, 'rb') as f:
-    leftOverFile_data = f.read()
-msg.add_attachment(leftOverFile_data,maintype="application", subtype="xlsx", filename=leftOverFile)
+    msg['Subject'] = 'Donation of excess food'
+    #The email address of sender
+    msg['From'] = sender_email
+    #Send email address of reciever
+
+    #maybe use a for loop here to send emails to several receivers
+    msg['To'] = receiver_email[2]
+    print(msg['To'])
+    msg.set_content(messageDonation[0])
 
 
-#https://support.google.com/mail/thread/23341254?hl=en
-connection.login(sender_email, password)
+    with open(leftOverFile, 'rb') as f:
+        leftOverFile_data = f.read()
+    msg.add_attachment(leftOverFile_data,maintype="application", subtype="xlsx", filename=leftOverFile)
 
 
-connection.send_message(msg)
+    #https://support.google.com/mail/thread/23341254?hl=en
+    connection.login(sender_email, password)
+
+
+    connection.send_message(msg)
 
