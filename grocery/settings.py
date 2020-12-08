@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'stock',
     'homepage',
     'donate',
+    'freshness',
 ]
 
 MIDDLEWARE = [

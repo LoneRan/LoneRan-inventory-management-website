@@ -11,14 +11,12 @@
 			<div class="mx-auto">
 				<br>
 				<div class="container">
-					<p>
+					
 					<div class ="row">
-					<h1 class="jumbotron-heading">Thanks for your donation!</h1>
-					{%if excel%}
-						<a class="btn btn-primary"href="{% url 'donate:sendNoti' %}">Send Notifications to All</a>
-					{%endif%}
+						<h1 class="jumbotron-heading">Thanks for your donation!</h1>
 					</div>
-					</p>
+					<p><em>Below is the current stock.</em></p>
+					
 					<p>
 						{%if not excel%}
 							<a href="donation/" class="btn btn-primary">Check Stock</a>
@@ -36,6 +34,10 @@
 								</div>
 							</div>
 						</div>
+						<div class="float-right">
+							<a class="btn btn-outline-primary btn-circle float-right"href="{% url 'donate:sendNoti' %}">Notify</a>
+						</div>
+						<br>
 					{%endif%}
 		
 				</div>
