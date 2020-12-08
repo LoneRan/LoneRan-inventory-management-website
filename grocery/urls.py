@@ -27,6 +27,7 @@ urlpatterns = [
     path('stock/',StockChartView.as_view(), name = 'stock'),
     path('',HomeView.as_view(), name = 'home'),
     path('donate/',include('donate.urls')),
+    path('freshness/',include('freshness.urls')),
     path('buy/',include('buy.urls')),
     path('search/',include('search_app.urls')),
     path('cart/',include('cart.urls')),

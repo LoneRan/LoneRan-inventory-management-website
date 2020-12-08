@@ -1,0 +1,142 @@
+Item_no,Item,Description,Price,Temp,Humidity,CO2,O2,freshness_level
+1,Roma Tomatoes,Vegetable,0.29,22,85,5.125081669,3.4143,semifresh
+2,Green Bell Pepper,Vegetable,0.58,27,93,1.579037232,9.213,fresh
+3,Romaine Lettuce,Vegetable,1.74,28,92,9.600731758,1.234,spoiled
+4,Yellow Onions,Vegetable,0.62,30,88,0.783910127,6.324,semifresh
+5,Cucumber,Vegetable,0.5,23,91,4.798095256,7.145,semifresh
+6,Red Bell Pepper,Vegetable,1.38,19,87,9.630587788,9.1234,fresh
+7,Grape Tomatoes,Vegetable,1.78,23,93,1.980438582,4.567,semifresh
+8,Zucchini,Vegetable,0.76,31,93,2.10297396,8.9865,fresh
+9,Organic Grape Tomatoes,Vegetable,1.96,29,87,7.777435656,5.654,semifresh
+10,Tomatoes On The Vine,Vegetable,1.48,33,95,6.356019542,5.98,semifresh
+11,Green Beans,Vegetable,1.68,21,95,6.388842696,4.765,semifresh
+12,Green Cabbage,Vegetable,1.74,27,89,5.197212652,0.945,spoiled
+13,Eggplant,Vegetable,1.23,29,94,6.554722684,1.987,spoiled
+14,Sweet Onion,Vegetable,0.82,31,88,4.825459133,0.876,spoiled
+15,Sweet potatoes,Vegetable,3.64,31,92,9.209897716,7.45,semifresh
+16,Asparagus,Vegetable,2.97,32,91,2.831611103,3.98,semifresh
+17,Fresh Corn ,Vegetable,0.48,29,85,0.118526119,9.421,fresh
+18,Green Leaf Lettuce,Vegetable,1.74,25,95,2.775882063,9.087,fresh
+19,Russet Baking Potatoes,Vegetable,0.48,24,94,3.492926863,3.45,semifresh
+20,Celery,Vegetable,0.98,24,94,3.853269011,6.98,semifresh
+21,Serrano Peppers,Vegetable,0.27,31,92,9.474160918,1.98,spoiled
+22,Beets,Vegetable,2.24,21,95,2.82465603,3.789,semifresh
+23,Sweet Potatoes,Vegetable,1.02,23,85,5.798465602,3.987,semifresh
+24,Chayote Squash,Vegetable,0.98,27,86,6.748715644,8.4556,fresh
+25,Broccoli Crowns,Vegetable,1.11,18,87,8.495298424,5.876,semifresh
+26,Tomatillos,Vegetable,0.78,33,95,8.191700882,9.23,fresh
+27,Jalapeno Peppers,Vegetable,0.2,22,92,1.749849171,6.987,semifresh
+28,White Onions,Vegetable,0.78,26,94,2.301129153,5.621,semifresh
+29,Organic Cauliflower,Vegetable,2.76,18,87,1.180060899,4.87,semifresh
+30,Red Potatoes,Vegetable,0.29,32,86,1.110778425,8.334,fresh
+31,Artichoke,Vegetable,1.98,25,92,1.40807385,9.234,fresh
+32,Carrots,Vegetable,3.44,23,92,7.572439483,5.643,semifresh
+33,Tomato,Vegetable,1.5,23,88,4.461780996,8.65,fresh
+34,Newstar Cooking With Spinach Plus Baby Kale,Vegetable,2.98,20,90,0.321938515,4.98,semifresh
+35,Peeled Baby Cut Carrot,Vegetable,0.98,29,91,1.551396066,3.98,semifresh
+36,Sweet Mini Pepper,Vegetable,2.88,19,89,1.099908828,1.23,spoiled
+37,White Onion,Vegetable,1.94,25,89,1.165597933,7.3,semifresh
+38,Celery Snack Pack,Vegetable,1.28,31,93,8.184838803,5.6,semifresh
+39,Fresh Corn On The Cob,Vegetable,3.47,24,88,2.511712067,9.2,fresh
+40,Carrot Chip,Vegetable,1.48,27,93,7.253435101,4.5,semifresh
+41,Peeled Baby-Cut Carrot,Vegetable,1.92,32,92,7.377214413,9.8,fresh
+42,Whole Mushroom,Vegetable,2.64,23,92,4.540322303,3.2,semifresh
+43,Green Leaf Lettuce,Vegetable,2.98,25,91,2.231611459,3.45,semifresh
+44,Mixed Bell Peppers ,Vegetable,3.37,29,94,6.54596285,0.876,spoiled
+45,Salad Cucumber,Vegetable,2.98,29,87,8.479501087,3.12,semifresh
+46,Matchstick Carrot,Vegetable,1.48,21,93,0.92249396,4.65,semifresh
+47,Mini San Marzano Tomatoe,Vegetable,2.98,33,90,2.762660602,9.435,fresh
+48,Okra,Vegetable,3.58,26,88,5.432390769,0.876,spoiled
+49,Poblano Pepper,Vegetable,0.37,32,85,1.948984259,3.456,semifresh
+50,Sweet Onion,Vegetable,2.48,32,86,3.309489152,2.345,spoiled
+51,Organic Carrot,Vegetable,1.96,21,94,9.715752985,2.137,spoiled
+52,Hothouse Beefstake Tomatoe,Vegetable,1.98,26,85,6.799532562,2.567,spoiled
+53,Bok Choy,Vegetable,1.31,19,93,5.061907938,5.324,semifresh
+54,Bbq Bulb Onions,Vegetable,0.98,25,90,7.167773655,3.9876,semifresh
+55,Microwave-Ready Russet Potato,Vegetable,0.78,32,88,2.964302202,2.3456,spoiled
+56,Red Cabbage,Vegetable,2.2,31,93,5.258427556,3.456,semifresh
+57,Orange Habanero Chilie,Vegetable,3.54,25,87,2.952118686,8.934,fresh
+58,Fresh Sliced White Mushroom,Vegetable,2.84,22,94,1.245790327,4.443,semifresh
+59,Organic Mini Cucumber,Vegetable,3.46,25,85,2.004918872,3.567,semifresh
+60,Ocean Mist Farms Celery Heart,Vegetable,1.98,28,89,5.791571266,8.345,fresh
+61,Glorys Fresh Ingredient Tomatoe,Vegetable,2.98,24,90,5.47492838,8.1,fresh
+62,Unset Wild Wonders Gourmet Medley Tomatoe,Vegetable,3.98,24,95,2.362704022,3.456,semifresh
+63,California Portabella Mushroom Cap,Vegetable,2.48,23,92,1.093653815,7.321,semifresh
+64,Whole Baby Bella Mushroom,Vegetable,2.98,18,92,6.886506335,9.876,fresh
+65,Tasteful Selections Honey Gold Potatoe,Vegetable,3.47,20,95,6.9605085,4.3211,semifresh
+66,Organic Mixed Bell Pepper,Vegetable,3.46,21,91,2.134626199,5.4321,semifresh
+67,Aloe Leaves,Vegetable,1.98,25,90,9.382882237,2.345,spoiled
+68,Organic Bell Pepper,Vegetable,2.76,33,87,6.985453283,8.9345,fresh
+69,Rutabagas,Vegetable,2.22,19,90,6.914739986,0.987,spoiled
+70,Yuca,Vegetable,1.42,20,88,5.246825137,8.123,fresh
+71,Savory Potatoes Herb Microwave Ready,Vegetable,3.97,23,86,4.017039888,9.456,fresh
+72,Organic Cucumber,Vegetable,2.98,30,95,8.860510192,3.456,semifresh
+73,Acorn Squash,Vegetable,1.77,23,92,1.83698433,8.456,fresh
+74,Napa Cabbage,Vegetable,1.74,23,94,7.974027043,5.432,semifresh
+75,Snacking Tomatoes,Vegetable,2.98,27,87,3.877108204,7.324,semifresh
+76,Nature Sweet Cherubs Heavenly Salad Tomatoes,Vegetable,2.98,33,87,2.424569401,3.456,semifresh
+77,Cheddar Ranch With Grilled Chicken Chopped Salad Kit,Vegetable,4.28,27,95,8.47233857,8.9887,fresh
+78,White Boiler Onion,Vegetable,2.98,23,95,3.55519482,0.98765,spoiled
+79,Power Blend Superfood,Vegetable,2.98,20,87,9.709594925,8.345,fresh
+80,White Pearl Onion,Vegetable,2.88,21,89,5.278451641,5.324,semifresh
+81,Collard Green,Vegetable,4.34,19,88,7.335109064,7.546,semifresh
+82,Grape Tomato,Vegetable,4.98,19,89,1.534883685,5.321,semifresh
+83,Fresh Sliced Baby Bella Mushroom,Vegetable,3.18,19,88,2.949180664,4.651,semifresh
+84,Turnip,Vegetable,1.94,26,92,5.734591913,3.221,semifresh
+85,Orange Bell Pepper,Vegetable,1.38,23,90,9.216056008,3.1,semifresh
+86,Classic Cut & Peeled Baby Carrot,Vegetable,1.48,23,93,2.550209421,9.8,fresh
+87,Premium Sweet Petites Carrot,Vegetable,1.48,18,87,1.197020941,8.4567,fresh
+88,Ruby Sensation Baby Red Potatoe,Vegetable,3.47,26,93,4.31386294,8.1,fresh
+89,Campari Tomatoe,Vegetable,2.78,33,85,3.447676615,9.8,fresh
+90,Red Potatoes,Vegetable,3.47,26,88,5.748357853,8.324,fresh
+91,Potatoes Garlic Parsley Microwave Ready,Vegetable,3.97,28,95,8.725629134,9.125,fresh
+92,Banana,Fruit,0.5,21,89,4.427480855,7.432,semifresh
+93,Bartlett Pears,Fruit,0.69,26,95,9.017413439,3.654,semifresh
+94,Fresh Strawberries,Fruit,2.48,29,93,2.31570775,6.432,semifresh
+95,Jumbo Hass Avocados,Fruit,3.48,27,89,2.347355531,5.21,semifresh
+96,Lemons,Fruit,0.48,23,90,1.389600296,9.321,fresh
+97,Personal Watermelon,Fruit,2.98,33,89,2.152345947,9.657,fresh
+98,Yellow (Ataulfo) Mango,Fruit,0.33,19,93,2.718683526,2.34,spoiled
+99,Organic Gala Apple,Fruit,3.86,27,89,4.755640222,4.234,semifresh
+100,Cantaloupe Melon,Fruit,1.98,26,87,4.267903421,9.876,fresh
+101,Strawberries Prepackaged,Fruit,5.16,21,95,7.195542147,9.234,fresh
+102,Fresh Red Seedless Grapes,Fruit,8.12,28,95,7.400415339,4.5487,semifresh
+103,Limes ,Fruit,3.88,24,92,2.326314987,3.2456,semifresh
+104,Honeycrisp Apples,Fruit,1.16,22,95,7.739500232,4.5123,semifresh
+105,Fresh Black Seedless Grapes,Fruit,4.46,27,89,2.121906494,9.87,fresh
+106,Gala Apple,Fruit,2.86,31,86,5.998494066,0.876,spoiled
+107,Yellow Nectarines,Fruit,0.79,25,92,8.139163825,6.234,semifresh
+108,Red Grapefruit,Fruit,1.13,24,87,0.221345451,8.97,fresh
+109,Papaya,Fruit,7.63,27,87,5.421344524,8.3456,fresh
+110,Navel Oranges,Fruit,8.76,26,95,1.84225146,9.12,fresh
+111,Organic Cucumber,Fruit,2.46,22,90,6.707524917,5.321,semifresh
+112,Golden Honeydew Melon,Fruit,3.28,32,91,6.723069523,2.345,spoiled
+113,Green Skin Avocados,Fruit,1.76,24,93,8.399668702,8.324,fresh
+114,Fresh Blackberries,Fruit,4.18,30,95,8.881301841,8.654,fresh
+115,Seedless Watermelon,Fruit,4.62,32,88,4.721305662,6.432,semifresh
+116,Honeycrisp Apple,Fruit,5.22,21,94,8.829534216,8.324,semifresh
+117,Honeydew Melon,Fruit,2.98,19,89,4.040834062,0.987,spoiled
+118,Fuji Apples,Fruit,0.76,28,87,9.60149624,8.234,fresh
+119,Red Delicious Apple,Fruit,4.92,31,94,7.690805006,7.321,semifresh
+120,Coconut,Fruit,1.98,20,86,3.995333627,4.321,semifresh
+121,Pink Lady Apple,Fruit,0.89,23,87,8.193943859,9.123,fresh
+122,Envy Apples,Fruit,1.18,28,91,0.06050447,2.345,spoiled
+123,Opal Apple,Fruit,0.78,18,89,4.39015224,8.234,fresh
+124,Pink Lady Apple,Fruit,4.47,30,88,8.788096119,2.345,spoiled
+125,Pluots,Fruit,4.28,30,85,6.433974508,9.123,fresh
+126,Red Grapefruit,Fruit,5.98,24,86,1.499958409,7.325,semifresh
+127,Ambrosia Apples,Fruit,1.06,25,92,0.619819115,8.321,fresh
+128,Anjou Pears,Fruit,0.67,28,88,5.709205299,7.213,semifresh
+129,Navel Orange,Fruit,0.72,18,85,9.366236533,3.456,semifresh
+130,Raspberries,Fruit,2.38,27,90,4.177876256,8.234,fresh
+131,Fresh Blackberries,Fruit,2.18,28,95,5.779509817,9.21,fresh
+132,Key Limes,Fruit,2.48,30,89,2.853909513,6.543,semifresh
+133,Jazz Apple,Fruit,4.47,32,89,7.11934507,4.567,semifresh
+134,Blood Orange,Fruit,4.5,32,89,5.529429025,3.2345,semifresh
+135,Bosc Pear,Fruit,3.77,22,95,8.323028895,2.312,spoiled
+136,Valencia Juicing Orange,Fruit,4.24,26,95,1.05035854,1.234,spoiled
+137,Guava,Fruit,1.98,19,94,3.750263686,3.267,semifresh
+138,Organic Fresh Rosemary,Herbs & Spices,1.98,27,87,8.714781406,2.345,spoiled
+139,Organic Fresh Dill,Herbs & Spices,1.98,19,85,4.762250418,9.876,fresh
+140,Organic Cilantro,Herbs & Spices,1.98,23,85,8.677966595,8.3456,fresh
+141,Organic Fresh Chive,Herbs & Spices,1.98,18,85,1.825761087,9.234,fresh
