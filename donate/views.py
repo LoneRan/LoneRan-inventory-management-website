@@ -9,7 +9,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.views.generic import TemplateView
 
 import pandas as pd
-# from donate.emailNotificationDonation import sendEmail
+from donate.emailNotificationDonation import sendEmail
 # from html import HTML
 # Create your views here.
 
@@ -29,7 +29,7 @@ def viewExcel(request):
     return render(request, 'donation/donapage.html', {'excel': excel})
 
 def sendNoti(request):
-    #sendEmail()
+    sendEmail()
     text_var = 'Email has been sent'
     return HttpResponse(text_var)
     # return render(request, 'donation/donapage.html')
