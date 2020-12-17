@@ -2,6 +2,8 @@ from .models import food
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 import csv
+
+from freshness_classification import predict_freshness, cross_val
 # Create your views here.
 path = './staticfiles/data/Freshness_classification.csv'
 def import_data(request):
@@ -21,5 +23,15 @@ def import_data(request):
                 )
     text_var = 'Data has been successfully imported into database!'
     return HttpResponse(text_var)
+
+def freshness(request):
+	
+	return render(request, 'index.html')
+
+def predict(request):
+    text_var = 'Predict successful!'
+    predict_freshness()
+    scores = cross_val()
+    return render(request,'prediction.html')
 
 
