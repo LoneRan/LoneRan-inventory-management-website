@@ -8,5 +8,5 @@ urlpatterns = [
     path('',views.freshness, name = 'fresh'),
     path('importdata',views.import_data, name = 'freshdata'),
     path('predict',views.predict, name = 'predict_result'),
-
+    path('reports',views.reports, name = 'reports'),
 ]

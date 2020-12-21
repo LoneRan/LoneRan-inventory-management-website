@@ -3,10 +3,18 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 import csv
 
-from freshness_classification import predict_freshness, cross_val
+
+from freshness.freshness_classification import predict_freshness, cross_val
+
+from django.db import connection
+import pandas as pd
 # Create your views here.
 path = './staticfiles/data/Freshness_classification.csv'
+cursor = connection.cursor()
+
 def import_data(request):
+    # cursor.execute('TRUNCATE TABLE freshness_food')
+    food.objects.all().delete()
     with open(path) as f:
         reader = csv.reader(f)
         for row in reader:
@@ -31,7 +39,16 @@ def freshness(request):
 def predict(request):
     text_var = 'Predict successful!'
     predict_freshness()
+    query = 'SELECT * FROM freshness_food'
+    # cursor.execute('SELECT * FROM freshness_food ORDER BY item')
+    # print(cursor.fetchall())
+    table = pd.read_sql(query,connection)
+    table = table.to_html()
+    
     scores = cross_val()
-    return render(request,'prediction.html')
+    return render(request,'prediction.html',{'table':table, 'scores':scores})
+
+def reports(request):
+    return render(request,'reports.html')
 
 

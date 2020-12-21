@@ -1,4 +1,3 @@
-Item_no,Item,Description,Price,Temp,Humidity,CO2,O2,freshness_level
 1,Roma Tomatoes,Vegetable,0.29,22,85,5.125081669,3.4143,semifresh
 2,Green Bell Pepper,Vegetable,0.58,27,93,1.579037232,9.213,fresh
 3,Romaine Lettuce,Vegetable,1.74,28,92,9.600731758,1.234,spoiled

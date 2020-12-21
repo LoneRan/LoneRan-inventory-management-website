@@ -92,7 +92,7 @@ if os.getenv('GAE_APPLICATION', None):
             'ENGINE': 'django.db.backends.mysql',
             #'ENGINE': 'django.db.backends.sqlite3',
             #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-            'HOST':'/cloudsql/inventory-deployment:us-central1:inventory-django',
+            'HOST':'/cloudsql/inventory-management-285419:us-west2:inventorymanagement',
             'USER':'iSmile',
             'PASSWORD':'COVID-19',
             'NAME':'main',
