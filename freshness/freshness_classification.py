@@ -11,7 +11,7 @@ import pandas as pd
 query = 'SELECT item_no, item, description, price, temp,humidity, co2, o2, freshlevel FROM freshness_food ORDER BY item'
 df = pd.read_sql(query,connection)
 # df.drop(['id'],axis=1)
-print(df)
+# print(df)
 #df=pd.read_csv('./staticfiles/data/Freshness_classification.csv')
 
 # df.head()
@@ -35,16 +35,22 @@ cleanup_nums = {"freshness_level":     {"semifresh": 2, "fresh": 1 , "spoiled" :
 df.replace(cleanup_nums, inplace=True)
 df.head()
 
-X = df.iloc[:,[3,4,5,6,7]].values
+X = df.iloc[:,[1,2,3,4,5,6,7]].values
 Y=df.iloc[:,8].values
 
-Y
+
 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.25, random_state = 0)
 
+X_prev = X_test[:,0:2]
+
+X_test = X_test[:,2:7]
+X_train = X_train[:,2:7]
+
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
+
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
@@ -65,5 +71,10 @@ def cross_val():
     score =accuracy_score(y_test,y_pred)
     scores = cross_val_score(classifier, X_train, y_train, cv=10)
     print('Cross-Validation Accuracy Scores', scores)
-    return str(scores)
+    return list(scores)
 
+def yPred():
+    return y_pred
+
+def xTest():
+    return X_prev

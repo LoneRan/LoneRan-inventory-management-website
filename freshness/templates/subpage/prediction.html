@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Dashboard</title>
+    <title>iSmileTechnologies</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
@@ -138,28 +138,25 @@
         
         
       </div>
-        <l1>Detection finished!</l1>
+
+        <h1>Prediction Result</h1>
         <br>
-        <l1>Cross validation result: </l1>
-      {%if scores%}
-            {% for score in scores%}
-                <l1>{{score}}</l1>
-            {% endfor%}
+        {%if table_pred%}           
+            <div class="ml-auto table table-light ">
+
+                {% autoescape off %}
+                    {{ table_pred }}
+                {% endautoescape %} 
+            </div>
+            <br>
         {%endif%}
 
-        {%if table%}
-            
-                <div class="col-auto">
-                    <div class="table table-dark">
-
-                        {% autoescape off %}
-                            {{ table }}
-                        {% endautoescape %} 
-                    </div>
-                </div>
-            
-            
-            <br>
+        <h1>Cross validation result: </h1>
+      {%if scores%}
+            {% for score in scores%}
+                <li class="list-group-item">{{score}}</li>
+                <br>
+            {% endfor%}
         {%endif%}
     
       {% comment %} <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> {% endcomment %}

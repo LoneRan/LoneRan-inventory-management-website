@@ -4,7 +4,7 @@ from django.http import HttpResponse
 import csv
 
 
-from freshness.freshness_classification import predict_freshness, cross_val
+from freshness.freshness_classification import predict_freshness, cross_val, yPred, xTest
 
 from django.db import connection
 import pandas as pd
@@ -30,7 +30,8 @@ def import_data(request):
                 freshlevel = row[8],
                 )
     text_var = 'Data has been successfully imported into database!'
-    return HttpResponse(text_var)
+    importdata = True
+    return render(request, 'index.html',{'importdata':importdata})
 
 def freshness(request):
 	
@@ -44,11 +45,19 @@ def predict(request):
     # print(cursor.fetchall())
     table = pd.read_sql(query,connection)
     table = table.to_html()
-    
+
+    y_pred = pd.DataFrame(yPred())
+    x_test = xTest()
+    x_test = pd.DataFrame(x_test)
+    y_pred.rename(columns={"0":"Prediction"})
+    x_test.rename(columns={"0":"item","1":"Description"})
+    table_pred = pd.concat([x_test,y_pred],axis=1,join='inner')
+    table_pred = table_pred.to_html()
+  
     scores = cross_val()
-    return render(request,'prediction.html',{'table':table, 'scores':scores})
+    return render(request,'subpage/prediction.html',{'table_pred':table_pred, 'table':table, 'scores':scores})
 
 def reports(request):
-    return render(request,'reports.html')
+    return render(request,'subpage/reports.html')
 
 
