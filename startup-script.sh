@@ -1,30 +1,39 @@
-# Install Stackdriver logging agent
-curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
-sudo bash install-logging-agent.sh
+#!/bin/bash
 
-# Install or update needed software
-apt-get update
-apt-get install -yq git supervisor python python-pip
-pip install --upgrade pip virtualenv
+source venv/bin/activate
+cd LoneRan-inventory-management-website
+git pull
+python3 manage.py runserver 0.0.0.0:8000
 
-# Account to own server process
-useradd -m -d /home/pythonapp pythonapp
+# # Install Stackdriver logging agent
+# curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
+# sudo bash install-logging-agent.sh
 
-# Fetch source code
-export HOME=/root
-git clone https://github.com/LoneRan/LoneRan-inventory-management-website.git /opt/app
+# # Install or update needed software
+# apt-get update
+# apt-get install -yq git supervisor python python-pip
+# pip install --upgrade pip virtualenv
 
-# Python environment setup
-virtualenv -p python3 /opt/app/gce/env
-source /opt/app/gce/env/bin/activate
-/opt/app/gce/env/bin/pip install -r /opt/app/gce/requirements.txt
+# # Account to own server process
+# useradd -m -d /home/pythonapp pythonapp
 
-# Set ownership to newly created account
-chown -R pythonapp:pythonapp /opt/app
+# # Fetch source code
+# export HOME=/root
+# git clone https://github.com/LoneRan/LoneRan-inventory-management-website.git /opt/app
 
-# Put supervisor configuration in proper place
-cp /opt/app/gce/python-app.conf /etc/supervisor/conf.d/python-app.conf
+# # Python environment setup
+# virtualenv -p python3 /opt/app/gce/env
+# source /opt/app/gce/env/bin/activate
+# /opt/app/gce/env/bin/pip install -r /opt/app/gce/requirements.txt
 
-# Start service via supervisorctl
-supervisorctl reread
-supervisorctl update
+# # Set ownership to newly created account
+# chown -R pythonapp:pythonapp /opt/app
+
+# # Put supervisor configuration in proper place
+# cp /opt/app/gce/python-app.conf /etc/supervisor/conf.d/python-app.conf
+
+# # Start service via supervisorctl
+# supervisorctl reread
+# supervisorctl update
+
+
