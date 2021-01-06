@@ -1,7 +1,8 @@
 from .models import food
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 import csv
+from django.db.models import Sum
 
 
 from freshness.freshness_classification import predict_freshness, cross_val, yPred, xTest
@@ -12,9 +13,12 @@ import pandas as pd
 path = './staticfiles/data/Freshness_classification.csv'
 cursor = connection.cursor()
 
+
+
 def import_data(request):
     # cursor.execute('TRUNCATE TABLE freshness_food')
     food.objects.all().delete()
+    
     with open(path) as f:
         reader = csv.reader(f)
         for row in reader:
@@ -59,5 +63,38 @@ def predict(request):
 
 def reports(request):
     return render(request,'subpage/reports.html')
+
+
+def overview_chart(request):
+    queryset = food.objects.order_by('-price')[:5]
+    labels = []
+    data = []
+
+    for fd in queryset:
+        labels.append(fd.item)
+        data.append(fd.price)
+
+    return render(request,'analysis.html',{
+        'labels':labels,
+        'data':data,
+    })
+
+def price_chart(request):
+    labels = []
+    data = []
+
+    queryset = food.objects.values('item').annotate(food_price=Sum('price')).order_by('-food_price')
+    
+    for entry in queryset:
+        labels.append(entry['item'])
+        data.append(entry['food_price'])
+    
+    return JsonResponse(data={
+        'labels': labels,
+        'data': data,
+    })
+
+def price(request):
+    return render(request,'subpage/price.html')
 
 

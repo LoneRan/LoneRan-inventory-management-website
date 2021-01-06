@@ -79,7 +79,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{% url 'freshness:overview-chart' %}">
               <span data-feather="users"></span>
               Products
             </a>
@@ -161,7 +161,7 @@
 
       {% comment %} <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> {% endcomment %}
     
-      <h2>Section title</h2>
+      <h2>Test Data</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -289,6 +289,9 @@
           </tbody>
         </table>
       </div>
+
+      
+
     </main>
     {% include 'footer.html' %}
   </div>

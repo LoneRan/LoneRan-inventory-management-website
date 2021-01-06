@@ -76,7 +76,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/importdata">
+            <a class="nav-link" href="{% url 'freshness:overview-chart' %}">
               <span data-feather="users"></span>
               Products
             </a>
@@ -132,8 +132,17 @@
 
   <div class = "ml-auto col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <main>
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
       
+      
+      
+
+      <div class="embed-responsive embed-responsive-16by9 wow fadeInRight">
+        {% comment %} <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe> {% endcomment %}
+        
+        <video controls width = "100%" height = "750">
+          <source src = "https://testlivestream-usea.streaming.media.azure.net/19e8ec5e-a6d7-4958-b577-9eba3962a946/e0683278-7b4d-4d93-b116-357e63f747f9.ism/manifest(format=m3u8-aapl)">
+        </video>
+      </div>
 
       {% comment %} <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> {% endcomment %}
           
